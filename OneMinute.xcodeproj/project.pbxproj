@@ -14,6 +14,7 @@
 		1F361A48205116CF0038AFC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F361A46205116CF0038AFC7 /* LaunchScreen.storyboard */; };
 		1F361A4B205116CF0038AFC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F361A4A205116CF0038AFC7 /* main.m */; };
 		1F361A6F205129750038AFC7 /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F361A6E205129750038AFC7 /* DefaultViewController.m */; };
+		C416DDAD2058D4D3000DFEEA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C416DDAC2058D4D3000DFEEA /* BaseViewController.m */; };
 		C464F589205148B300D435C1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C464F588205148B300D435C1 /* SettingViewController.m */; };
 		C464F58E205148E300D435C1 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C464F58D205148E300D435C1 /* MeViewController.m */; };
 		F994C66BB51158072EDBA286 /* libPods-OneMinute.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F799A469EF8873CEEF92A9E /* libPods-OneMinute.a */; };
@@ -34,6 +35,9 @@
 		1F361A6E205129750038AFC7 /* DefaultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
 		1F361A70205129E20038AFC7 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		5F799A469EF8873CEEF92A9E /* libPods-OneMinute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneMinute.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C416DDAB2058D4D3000DFEEA /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C416DDAC2058D4D3000DFEEA /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C416DDAE20590BFC000DFEEA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C464F587205148B300D435C1 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		C464F588205148B300D435C1 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		C464F58C205148E300D435C1 /* MeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
@@ -118,9 +122,12 @@
 		1F361A69205125650038AFC7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C416DDAE20590BFC000DFEEA /* PrefixHeader.pch */,
 				1F361A70205129E20038AFC7 /* Header.h */,
 				1F361A3B205116CF0038AFC7 /* AppDelegate.h */,
 				1F361A3C205116CF0038AFC7 /* AppDelegate.m */,
+				C416DDAB2058D4D3000DFEEA /* BaseViewController.h */,
+				C416DDAC2058D4D3000DFEEA /* BaseViewController.m */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -290,6 +297,7 @@
 				1F361A4B205116CF0038AFC7 /* main.m in Sources */,
 				1F361A6F205129750038AFC7 /* DefaultViewController.m in Sources */,
 				1F361A3D205116CF0038AFC7 /* AppDelegate.m in Sources */,
+				C416DDAD2058D4D3000DFEEA /* BaseViewController.m in Sources */,
 				C464F589205148B300D435C1 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +435,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7522C6AP3T;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = /Users/Jerry/Desktop/OneMinute/OneMinute/Resources/PrefixHeader.pch;
 				INFOPLIST_FILE = OneMinute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcpi.OneMinute;
@@ -442,6 +452,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7522C6AP3T;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = /Users/Jerry/Desktop/OneMinute/OneMinute/Resources/PrefixHeader.pch;
 				INFOPLIST_FILE = OneMinute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcpi.OneMinute;

@@ -8,6 +8,7 @@
 
 #import "Header.h"
 #import "MeViewController.h"
+#import "BaseViewController.h"
 
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -52,6 +53,13 @@
     return nil;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.section == 0) {
+        BaseViewController *baseVC = [[BaseViewController alloc] init];
+        [self.navigationController pushViewController:baseVC animated:YES];
+    }
+}
 
 
 
