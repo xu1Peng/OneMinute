@@ -17,6 +17,10 @@
 		C416DDAD2058D4D3000DFEEA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C416DDAC2058D4D3000DFEEA /* BaseViewController.m */; };
 		C464F589205148B300D435C1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C464F588205148B300D435C1 /* SettingViewController.m */; };
 		C464F58E205148E300D435C1 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C464F58D205148E300D435C1 /* MeViewController.m */; };
+		C467167020620983009746D4 /* LikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C467166F20620983009746D4 /* LikeViewController.m */; };
+		C4671673206210A2009746D4 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C4671671206210A2009746D4 /* UIColor+Addition.m */; };
+		C467167C206253C9009746D4 /* MyLikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C467167B206253C9009746D4 /* MyLikeViewController.m */; };
+		C467167F206259BC009746D4 /* UIButton_Back.m in Sources */ = {isa = PBXBuildFile; fileRef = C467167E206259BC009746D4 /* UIButton_Back.m */; };
 		F994C66BB51158072EDBA286 /* libPods-OneMinute.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F799A469EF8873CEEF92A9E /* libPods-OneMinute.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +46,14 @@
 		C464F588205148B300D435C1 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		C464F58C205148E300D435C1 /* MeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		C464F58D205148E300D435C1 /* MeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		C467166E20620983009746D4 /* LikeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LikeViewController.h; sourceTree = "<group>"; };
+		C467166F20620983009746D4 /* LikeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LikeViewController.m; sourceTree = "<group>"; };
+		C4671671206210A2009746D4 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		C4671672206210A2009746D4 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		C467167A206253C9009746D4 /* MyLikeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLikeViewController.h; sourceTree = "<group>"; };
+		C467167B206253C9009746D4 /* MyLikeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLikeViewController.m; sourceTree = "<group>"; };
+		C467167D206259BC009746D4 /* UIButton_Back.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIButton_Back.h; sourceTree = "<group>"; };
+		C467167E206259BC009746D4 /* UIButton_Back.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButton_Back.m; sourceTree = "<group>"; };
 		C577B70D9D7075862F594DC2 /* Pods-OneMinute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneMinute.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneMinute/Pods-OneMinute.release.xcconfig"; sourceTree = "<group>"; };
 		EC376BD0C44E89E27683E8DF /* Pods-OneMinute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneMinute.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneMinute/Pods-OneMinute.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +117,7 @@
 				1F361A3F205116CF0038AFC7 /* ViewController.m */,
 				C464F58B205148CB00D435C1 /* Me */,
 				C464F58A205148B900D435C1 /* Setting */,
+				C467166D206208C6009746D4 /* Like */,
 				1F361A5120511F790038AFC7 /* Login */,
 			);
 			path = Features;
@@ -156,6 +169,21 @@
 				C464F58D205148E300D435C1 /* MeViewController.m */,
 			);
 			path = Me;
+			sourceTree = "<group>";
+		};
+		C467166D206208C6009746D4 /* Like */ = {
+			isa = PBXGroup;
+			children = (
+				C4671672206210A2009746D4 /* UIColor+Addition.h */,
+				C4671671206210A2009746D4 /* UIColor+Addition.m */,
+				C467167D206259BC009746D4 /* UIButton_Back.h */,
+				C467167E206259BC009746D4 /* UIButton_Back.m */,
+				C467166E20620983009746D4 /* LikeViewController.h */,
+				C467166F20620983009746D4 /* LikeViewController.m */,
+				C467167A206253C9009746D4 /* MyLikeViewController.h */,
+				C467167B206253C9009746D4 /* MyLikeViewController.m */,
+			);
+			path = Like;
 			sourceTree = "<group>";
 		};
 		FF56C176C890CBFA1C975133 /* Pods */ = {
@@ -292,9 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4671673206210A2009746D4 /* UIColor+Addition.m in Sources */,
 				C464F58E205148E300D435C1 /* MeViewController.m in Sources */,
+				C467167C206253C9009746D4 /* MyLikeViewController.m in Sources */,
+				C467167F206259BC009746D4 /* UIButton_Back.m in Sources */,
 				1F361A40205116CF0038AFC7 /* ViewController.m in Sources */,
 				1F361A4B205116CF0038AFC7 /* main.m in Sources */,
+				C467167020620983009746D4 /* LikeViewController.m in Sources */,
 				1F361A6F205129750038AFC7 /* DefaultViewController.m in Sources */,
 				1F361A3D205116CF0038AFC7 /* AppDelegate.m in Sources */,
 				C416DDAD2058D4D3000DFEEA /* BaseViewController.m in Sources */,

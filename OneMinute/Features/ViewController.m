@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, IPhone4_5_6_6P_X(100, 100, 120, 140, 140), 50)];
+//    UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, IPhone4_5_6_6P_X(100, 100, 120, 140, 140), 50)];
 }
 
 

@@ -9,6 +9,7 @@
 #import "Header.h"
 #import "MeViewController.h"
 #import "BaseViewController.h"
+#import "LikeViewController.h"
 
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -30,9 +31,6 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
 }
-
-
-
 
 // 必须实现的两个方法
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -56,11 +54,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.section == 0) {
-        BaseViewController *baseVC = [[BaseViewController alloc] init];
-        [self.navigationController pushViewController:baseVC animated:YES];
+//        BaseViewController *baseVC = [[BaseViewController alloc] init];
+//        [self.navigationController pushViewController:baseVC animated:YES];
+//    }else{
+        LikeViewController *likeVC = [[LikeViewController alloc] init];
+//        [self.navigationController pushViewController:likeVC animated:YES];
+        [self presentViewController:likeVC animated:YES completion:nil];
     }
 }
-
-
 
 @end

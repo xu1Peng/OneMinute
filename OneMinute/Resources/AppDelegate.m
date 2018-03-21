@@ -9,6 +9,7 @@
 #import "Header.h"
 #import "AppDelegate.h"
 #import "MeViewController.h"
+#import "LikeViewController.h"
 #import "SettingViewController.h"
 
 @interface AppDelegate ()
@@ -19,11 +20,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    MeViewController *meVC = [[MeViewController alloc] init];
+    LikeViewController *meVC = [[LikeViewController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:meVC];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:meVC];
+     self.window.rootViewController = meVC;
 
     return YES;
 }
