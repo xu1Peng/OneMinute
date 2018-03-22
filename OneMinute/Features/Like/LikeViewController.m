@@ -100,6 +100,7 @@
     gradientLayer.startPoint = CGPointMake(0, 0);
     gradientLayer.endPoint = CGPointMake(1, 0);
     
+    
     //设置颜色数组
     UIColor *startColor = [UIColor colorWithHex:@"#FF4676"];
     UIColor *endColor = [UIColor colorWithHex:@"#FB946B"];
